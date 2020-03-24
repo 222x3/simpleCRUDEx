@@ -1,4 +1,3 @@
-
 const Student = require('./Student');
 
 let myDatabase = function() {
@@ -19,7 +18,6 @@ myDatabase.prototype.postStudent = function(student) {
       return false;
     }
   }
-//	this.students[studentIndex++] = student;
 	this.students[studentIndex++] = new Student(student.id,student.name,student.age,student.grade);
 	return true;
 }
@@ -38,7 +36,6 @@ myDatabase.prototype.getStudent = function(id) {
 myDatabase.prototype.putStudent = function(student) {
   for (let i=0;i<this.students.length;i++) {
     if (this.students[i] && this.students[i].id == student.id) {
-//			this.students[i] = student;
       this.students[i] = new Student(student.id,student.name,student.age,student.grade);
       return true;
     }

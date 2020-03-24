@@ -1,6 +1,3 @@
-
-
-
 let Student = function(id,name,age,grade) {
 	this.id = id;
 	this.name = name;
